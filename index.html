@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사칙연산 계산기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" class="display" value="0" readonly>
+    <div class="buttons">
+      <button class="btn btn-clear span-2" id="clear">C</button>
+      <button class="btn btn-operator" data-action="divide">÷</button>
+      <button class="btn btn-operator" data-action="multiply">×</button>
+
+      <button class="btn btn-num">7</button>
+      <button class="btn btn-num">8</button>
+      <button class="btn btn-num">9</button>
+      <button class="btn btn-operator" data-action="subtract">-</button>
+
+      <button class="btn btn-num">4</button>
+      <button class="btn btn-num">5</button>
+      <button class="btn btn-num">6</button>
+      <button class="btn btn-operator" data-action="add">+</button>
+
+      <button class="btn btn-num">1</button>
+      <button class="btn btn-num">2</button>
+      <button class="btn btn-num">3</button>
+      <button class="btn btn-equals span-v-2" id="equals">=</button>
+
+      <button class="btn btn-num span-2">0</button>
+      <button class="btn btn-num">.</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

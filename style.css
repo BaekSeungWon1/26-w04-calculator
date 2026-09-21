@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f6f8;
+}
+
+.calculator {
+  width: 320px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.display {
+  width: 100%;
+  height: 60px;
+  background-color: #f1f3f5;
+  border: none;
+  border-radius: 8px;
+  font-size: 2rem;
+  text-align: right;
+  padding: 0 16px;
+  color: #333;
+  margin-bottom: 16px;
+  outline: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  height: 56px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #e9ecef;
+  color: #495057;
+  transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+.btn:hover {
+  background-color: #dee2e6;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-operator {
+  background-color: #e7f5ff;
+  color: #1c7ed6;
+}
+
+.btn-operator:hover {
+  background-color: #d0ebff;
+}
+
+.btn-clear {
+  background-color: #ffe3e3;
+  color: #e03131;
+}
+
+.btn-clear:hover {
+  background-color: #ffc9c9;
+}
+
+.btn-equals {
+  background-color: #228be6;
+  color: #ffffff;
+}
+
+.btn-equals:hover {
+  background-color: #1c7ed6;
+}
+
+/* 그리드 레이아웃 조절 */
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-v-2 {
+  grid-row: span 2;
+  height: 100%;
+}
